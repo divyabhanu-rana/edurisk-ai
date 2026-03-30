@@ -1,0 +1,39 @@
+EduRisk AI - Model Evaluation
+=============================
+Accuracy: 0.8421
+F1 Macro: 0.8338
+F1 Weighted: 0.8410
+
+Classification Report:
+              precision    recall  f1-score   support
+
+   High Risk     0.8684    0.7174    0.7857        46
+    Low Risk     0.9400    0.7966    0.8624        59
+ Medium Risk     0.7934    0.9231    0.8533       104
+
+    accuracy                         0.8421       209
+   macro avg     0.8673    0.8124    0.8338       209
+weighted avg     0.8513    0.8421    0.8410       209
+
+Top 20 Features by Importance:
+           feature  importance
+           num__G2    0.298533
+           num__G1    0.184562
+     num__failures    0.036613
+     num__absences    0.028074
+          num__age    0.019999
+         num__Medu    0.019868
+        num__goout    0.018735
+         num__Walc    0.018013
+       num__health    0.017412
+     num__freetime    0.016440
+         num__Fedu    0.016249
+    num__studytime    0.015396
+  cat__subject_por    0.014113
+       num__famrel    0.013411
+         num__Dalc    0.013381
+   num__traveltime    0.011738
+  cat__subject_mat    0.011685
+cat__schoolsup_yes    0.008911
+   cat__higher_yes    0.008851
+ cat__schoolsup_no    0.008566
