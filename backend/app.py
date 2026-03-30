@@ -9,13 +9,14 @@ app = FastAPI(
     description="Predict student academic risk level and generate study recommendations."
 )
 
-# Allow frontend (Vite) to call backend
+# Allow frontend (Vite/Netlify) to call backend
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-        "https://edurisk-ai.netlify.app/",
+        "https://edurisk-ai.netlify.app",
+        "https://www.edurisk-ai.netlify.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
